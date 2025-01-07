@@ -23,5 +23,27 @@ nav ul li{
   font-size: 16px;
   
 }
+.loginbtn {
+  background: transparent;
+  color: #fff;
+  padding: 14px 25px;
+  font-size: 16px;
+  border-radius: 30px;
+  cursor: pointer;
+  border: 2px solid #fff;
+  outline: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
 
 
+.loginbtn:hover{
+  background: #fff;
+  color: #212121;
+}
+
+.dark-nav{
+  background: linear-gradient(to right,rgba(89, 63, 139, 1),rgb(89, 9, 135));
+  color: #fff;
+}
