@@ -44,6 +44,6 @@ nav ul li{
 }
 
 .dark-nav{
-  background: linear-gradient(to right,rgba(89, 63, 139, 1),rgb(89, 9, 135));
+  background: linear-gradient(to right,rgb(89, 9, 135),rgba(89, 63, 139, 1));
   color: #fff;
 }

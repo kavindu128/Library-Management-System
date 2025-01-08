@@ -1,0 +1,88 @@
+.contact {
+    margin: 80px auto;
+    max-width: 90%;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.contact-col {
+    flex-basis: 48%;
+    color: #676767;
+}
+
+.contact h3 {
+    color: #000F38;
+    font-weight: 500;
+    font-size: 20px; 
+    width: auto; 
+    padding-bottom: 15px;
+}
+
+.contact-col h3 img {
+    width: auto; /* Fix invalid width value */
+    height: 20px;
+    margin-left: 10px;
+}
+
+
+.contact-col p {
+    max-width: 450px;
+    font-size: 16px;
+}
+
+.contact-col ul li {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    font-size: 16px;
+}
+
+.contact-col ul li img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.follow-us {
+    text-align: left; /* Align heading to the left */
+    margin-bottom: 20px;
+}
+
+.follow-us h3 {
+    color: #000F38;
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.social-icons ul {
+    display: flex; /* Arrange icons horizontally */
+    gap: 25px; /* Space between icons */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    list-style-type: none; /* Remove bullets */
+}
+
+.social-icons ul li {
+    display: flex; /* Ensure proper alignment */
+}
+
+.social-icons ul li img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease; /* Add hover effect */
+}
+
+.social-icons ul li img:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+}
+
+.social{
+    flex-basis: 25%;
+    color: #676767;
+}
