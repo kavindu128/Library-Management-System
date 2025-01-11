@@ -12,12 +12,13 @@ import category7 from '../../assets/category7.png'
 import category8 from '../../assets/category8.png'
 import category9 from '../../assets/category9.png'
 import category10 from '../../assets/category10.png'
+import Footer from '../../Components/Footer/Footer'
 
 
 const Books = () => {
   return (
     <>
-      <div className='books container'>
+      <div className='books'>
         <div className="search-container">
           <input type="text" placeholder="Search books..." className="search-input" />
           <img src={searchIcon} alt="Search" className="search-icon" />
@@ -101,7 +102,7 @@ const Books = () => {
         </div>
       </div>
 
-
+    <Footer/>
     </>
 
   )

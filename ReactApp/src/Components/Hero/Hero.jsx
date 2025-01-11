@@ -1,6 +1,6 @@
 import React from 'react'
 import './Hero.css'
-import next_arrow from '../../assets/next_arrow.png'
+import next_arrow from '../../assets/right-arrow.png'
 
 const Hero = () => {
   return (
