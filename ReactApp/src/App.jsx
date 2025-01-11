@@ -1,29 +1,27 @@
 import React from 'react'
+import { Route, Routes } from 'react-router-dom'  
 import Nav_bar from './Components/Nav_bar/Nav_bar'
-import Hero from './Components/Hero/Hero'
-import Features from './Components/Features/Features'
-import Title from './Components/Title/Title'
-import About from './Components/About/About'
-import Contact from './Components/Contact/Contact'
+import Login from './Components/Form/Login/Login'
+import Home from './Pages/Home/Home'
+import Books from './Pages/Books/Books'
+import AboutUs from './Pages/AboutUs/AboutUs'
+import ContactN from './Pages/ContactN/ContactN'
+
 
 
 
 const App = () => {
   return (
     <>
+    <Nav_bar/>
+    <Routes>
+      <Route path='/login' element={<Login/>} />
+      <Route path='/' element={<Home/>} />
+      <Route path='/books' element={<Books/>} />
+      <Route path='/aboutus' element={<AboutUs/>} />
+      <Route path='/contactN' element={<ContactN/>} />
+    </Routes>
    
-    <div>
-      <Nav_bar/>
-      <Hero/>
-      <div className='container'>
-        <Title subTitle='Specific features' Title='What We Offer'/>  
-        <Features/>
-        <About/>
-        <Title subTitle='Contact Us' Title='Get in Touch'/>
-        <Contact/>
-      </div>
-      
-    </div>
     </>
     
   )
