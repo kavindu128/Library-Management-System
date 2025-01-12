@@ -6,6 +6,7 @@ import Home from './Pages/Home/Home'
 import Books from './Pages/Books/Books'
 import AboutUs from './Pages/AboutUs/AboutUs'
 import ContactN from './Pages/ContactN/ContactN'
+import Registation from './Components/Form/Registation/Registation'
 
 
 
@@ -20,6 +21,9 @@ const App = () => {
       <Route path='/books' element={<Books/>} />
       <Route path='/aboutus' element={<AboutUs/>} />
       <Route path='/contactN' element={<ContactN/>} />
+      <Route path='/register' element={<Registation/>}/>
+      <Route path='/login' element={<Login/>}/>
+  
     </Routes>
    
     </>

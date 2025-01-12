@@ -1,50 +1,43 @@
-import './Login.css';
-import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
-
-const Login = ({ setIsLoggedIn }) => {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-  const navigate = useNavigate();
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Handle login logic here
-    console.log('Logging in with:', { email, password });
-    setIsLoggedIn(true);
-    navigate('/profile');
-  };
-
+import React from 'react'
+import './Login.css'
+import { FaUser } from "react-icons/fa";
+import { FaLock } from "react-icons/fa";
+import Registation from '../Registation/Registation';
+import { Link } from 'react-router-dom';
+const Login = () => {
   return (
-    <div className="login-container">
-      <div className="login-form">
-        <h2>Login</h2>
-        <form onSubmit={handleSubmit}>
-          <div>
-            <label htmlFor="email">Email</label>
-            <input
-              type="email"
-              id="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              required
-            />
-          </div>
-          <div>
-            <label htmlFor="password">Password</label>
-            <input
-              type="password"
-              id="password"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-              required
-            />
-          </div>
-          <button type="submit">Login</button>
-        </form>
-      </div>
-    </div>
-  );
-};
+    <>
+    <div className='login-body'>
+    <div className='login-wrapper'>
+      <form action="">
+        <h1>Login</h1>
+        <div className='input-box'>
+            <input type='text' placeholder='Username' reduired/>
+            <FaUser className='icon'/>
+        </div>
 
-export default Login;
+        <div className='input-box'>
+            <input type='passward' placeholder='Passward' reduired/>
+            <FaLock className='icon'/>
+
+        </div>
+
+        <div className="remember-forgot">
+          <label htmlFor=''><input type='checkbox'/>Remember me</label>
+          <a href='#'>Forgot Passward</a>
+        </div>
+
+        <Link to="/"><button type="submit">Login</button></Link>
+
+        <div className="register-link">
+          <p>Don't have an account?<a href=''><Link to='/register'> Register</Link></a></p>
+        </div>
+      </form>
+
+    </div>
+    </div>
+    </>
+  )
+}
+
+export default Login

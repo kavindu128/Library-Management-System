@@ -1,61 +1,47 @@
-import './Login.css';
-import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import React from 'react'
+import './Registation.css'
+import { FaUser } from "react-icons/fa";
+import { FaLock } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
+import { Link } from "react-router-dom";
 
-const Login = ({ setIsLoggedIn }) => {
-  const [username, setUsername] = useState('');
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-  const navigate = useNavigate();
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Handle login logic here
-    console.log('Logging in with:', { username, email, password });
-    setIsLoggedIn(true);
-    navigate('/profile');
-  };
-
+const Registation = () => {
   return (
-    <div className="login-container">
-      <div className="login-form">
-        <h2>Login</h2>
-        <form onSubmit={handleSubmit}>
-          <div>
-            <label htmlFor="username">Username</label>
-            <input
-              type="text"
-              id="username"
-              value={username}
-              onChange={(e) => setUsername(e.target.value)}
-              required
-            />
-          </div>
-          <div>
-            <label htmlFor="email">Email</label>
-            <input
-              type="email"
-              id="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              required
-            />
-          </div>
-          <div>
-            <label htmlFor="password">Password</label>
-            <input
-              type="password"
-              id="password"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-              required
-            />
-          </div>
-          <button type="submit">Login</button>
-        </form>
-      </div>
-    </div>
-  );
-};
+    <div className='register-body'>
+    <div className='register-wrapper'>
+      <form action="">
+        <h1>Register</h1>
+        <div className='input-box'>
+            <input type='text' placeholder='Username' reduired/>
+            <FaUser className='icon'/>
+        </div>
 
-export default Login;
+        <div className='input-box'>
+            <input type='email' placeholder='Email' reduired/>
+            <MdEmail className='icon'/>
+        </div>
+
+        <div className='input-box'>
+            <input type='passward' placeholder='Passward' reduired/>
+            <FaLock className='icon'/>
+
+        </div>
+
+        <div className="remember-forgot">
+          <label htmlFor=''><input type='checkbox'/>I agree to the terms & conditions</label>
+        </div>
+
+        <Link  to='/'><button type="submit">Register</button></Link>
+
+        <div className="login-link">
+          <p>Already have an account?<a href='#'><Link to='/login'> Login</Link></a></p>
+        </div>
+      </form>
+
+    </div>
+    </div>
+
+  )
+}
+
+export default Registation
