@@ -31,7 +31,7 @@ const Registation = () => {
           <label htmlFor=''><input type='checkbox'/>I agree to the terms & conditions</label>
         </div>
 
-        <Link  to='/'><button type="submit">Register</button></Link>
+        <Link  to='/login'><button type="submit">Register</button></Link>
 
         <div className="login-link">
           <p>Already have an account?<a href='#'><Link to='/login'> Login</Link></a></p>

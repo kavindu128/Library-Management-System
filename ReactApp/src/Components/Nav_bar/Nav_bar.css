@@ -23,6 +23,8 @@ nav ul li{
   font-size: 16px;
   
 }
+
+
 .loginbtn {
   background: transparent;
   color: #fff;
@@ -36,7 +38,6 @@ nav ul li{
   align-items: center;
   justify-content: center;
 }
-
 
 .loginbtn:hover{
   background: #fff;
