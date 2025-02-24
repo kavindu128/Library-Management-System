@@ -1,18 +1,15 @@
-// This is your Prisma schema file,
-// learn more about it in the docs: https://pris.ly/d/prisma-schema
-
-generator client {
-  provider = "prisma-client-js"
-}
-
 datasource db {
   provider = "sqlite"
   url      = env("DATABASE_URL")
 }
 
-model book {
-  id Int @id @defult(autoncrement())
-  name String
-  author string
-
+generator client {
+  provider = "prisma-client-js"
 }
+
+model Book {
+  id     Int    @id @default(autoincrement()) // Auto-incrementing ID
+  name   String
+  author String
+}
+

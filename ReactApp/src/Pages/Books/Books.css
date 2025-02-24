@@ -112,5 +112,84 @@
     opacity: 1;
 }
   
+.book-form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
 
+.book-form input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 200px;
+}
+
+.add-button,
+.edit-button {
+  padding: 10px 15px;
+  border: none;
+  background:linear-gradient(to right,rgb(73, 207, 73),rgb(31, 111, 91));
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.add-button:hover,
+.edit-button:hover {
+  background: #14d727;
+}
+
+.book-list {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.book-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.book-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.edit-button {
+  background: linear-gradient(to right,rgb(57, 97, 197),rgb(124, 52, 162));
+}
+
+.edit-button:hover {
+  background: #0056b3;
+}
+
+.delete-button {
+  padding: 10px 15px;
+  border: none;
+  background: linear-gradient(to right,rgb(237, 45, 209),rgb(155, 87, 192));
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.delete-button:hover {
+  background: #c82333;
+}
   
