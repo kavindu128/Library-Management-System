@@ -1,25 +1,103 @@
-import axios from "axios";
+// api.js
 
-const API_URL = "http://localhost:5000/books";
-
-// 📌 Fetch all books
-export const getBooks = async () => {
-  const response = await axios.get(API_URL);
-  return response.data;
-};
+// 📌 Get all books
+export async function getBooks() {
+  try {
+    const response = await fetch("http://localhost:5000/books");
+    if (!response.ok) throw new Error("Failed to fetch books");
+    return await response.json();
+  } catch (error) {
+    console.error("Error fetching books:", error);
+    throw error;
+  }
+}
 
 // 📌 Add a new book
-export const addBook = async (book) => {
-  const response = await axios.post(API_URL, book);
-  return response.data;
-};
+export async function addBook(name, author) {
+  try {
+    const response = await fetch("http://localhost:5000/books", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ name, author }),
+    });
+    if (!response.ok) throw new Error("Failed to add book");
+    return await response.json();
+  } catch (error) {
+    console.error("Error adding book:", error);
+    throw error;
+  }
+}
 
 // 📌 Delete a book
-export const deleteBook = async (id) => {
-  await axios.delete(`${API_URL}/${id}`);
-};
+export async function deleteBook(id) {
+  try {
+    const response = await fetch(`http://localhost:5000/books/${id}`, {
+      method: "DELETE",
+    });
+    if (!response.ok) throw new Error("Failed to delete book");
+    return await response.json();
+  } catch (error) {
+    console.error("Error deleting book:", error);
+    throw error;
+  }
+}
 
 // 📌 Update a book
-export const updateBook = async (id, book) => {
-  await axios.put(`${API_URL}/${id}`, book);
-};
+export async function updateBook(id, name, author) {
+  try {
+    const response = await fetch(`http://localhost:5000/books/${id}`, {
+      method: "PUT",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ name, author }),
+    });
+    if (!response.ok) throw new Error("Failed to update book");
+    return await response.json();
+  } catch (error) {
+    console.error("Error updating book:", error);
+    throw error;
+  }
+}
+
+// 📌 Get all reserved books
+export async function getReservedBooks() {
+  try {
+    const response = await fetch("http://localhost:5000/books/reserved");
+    if (!response.ok) throw new Error("Failed to fetch reserved books");
+    return await response.json();
+  } catch (error) {
+    console.error("Error fetching reserved books:", error);
+    throw error;
+  }
+}
+
+// 📌 Reserve a book
+export async function reserveBook(id) {
+  try {
+    const response = await fetch(`http://localhost:5000/books/${id}/reserve`, {
+      method: "POST",
+    });
+    if (!response.ok) throw new Error("Failed to reserve book");
+    return await response.json();
+  } catch (error) {
+    console.error("Error reserving book:", error);
+    throw error;
+  }
+}
+
+// 📌 Unreserve a book
+export async function unreserveBook(id) {
+  try {
+    const response = await fetch(`http://localhost:5000/books/${id}/unreserve`, {
+      method: "POST",
+    });
+    if (!response.ok) throw new Error("Failed to unreserve book");
+    return await response.json();
+  } catch (error) {
+    console.error("Error unreserving book:", error);
+    throw error;
+  }
+}
