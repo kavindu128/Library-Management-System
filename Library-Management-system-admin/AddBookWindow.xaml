@@ -1,0 +1,119 @@
+﻿<Window x:Class="Library_Management_system_admin.AddBookWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Library_Management_system_admin"
+        mc:Ignorable="d"
+        Title="AddBookWindow" Height="450" Width="700">
+
+
+    <Grid Background="Purple" Margin="0,0,0,-6">
+
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="3*"/>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Text="BOOK ID" 
+            Padding="6" FontSize="20"
+            Grid.Row="1" Grid.Column="0"
+            Background="HotPink" 
+            Height="auto"
+            FontWeight="Bold"
+            Foreground="Black"
+            TextAlignment="Center" Margin="62,12,29,20"/>
+
+        <TextBox Padding="5"
+            Background="Pink"
+            Grid.Row="1"
+            Grid.Column="1"
+            x:Name="BookIDTextBox"
+            TextAlignment="Center"  Margin="10,12,29,15"/>
+
+        <TextBlock Text="BOOK NAME" 
+            Padding="6" FontSize="20"
+            Grid.Row="2" Grid.Column="0"
+            Background="HotPink" 
+            Height="auto"
+            FontWeight="Bold"
+            Foreground="Black"
+            TextAlignment="Center" Margin="62,12,29,23"/>
+
+        <TextBox Padding="5"
+            Background="Pink"
+            Grid.Row="2"
+            Grid.Column="1"
+            x:Name="BookNameTextBox"
+            TextAlignment="Center" Margin="10,12,29,15"/>
+
+
+        <TextBlock Text="AUTHOR" 
+            Padding="6" FontSize="20"
+            Grid.Row="3" Grid.Column="0"
+            Background="HotPink" 
+            Height="auto"
+            FontWeight="Bold"
+            Foreground="Black"
+            TextAlignment="Center" Margin="62,12,29,23"/>
+
+        <TextBox Padding="5"
+            Background="Pink"
+            Grid.Row="3"
+            Grid.Column="1"
+            x:Name="BookAuthorTextBox"
+            TextAlignment="Center" Margin="10,10,29,16"/>
+
+
+        <TextBlock Text="CATERGORY" 
+            Padding="6" FontSize="20"
+            Grid.Row="4" Grid.Column="0"
+            Background="HotPink" 
+            Height="auto"
+            FontWeight="Bold"
+            Foreground="Black"
+            TextAlignment="Center" Margin="62,12,29,24"/>
+
+        <TextBox Padding="5"
+            Background="Pink"
+            Grid.Row="4"
+            Grid.Column="1"
+            x:Name="BookCatergoryTextBox"
+            TextAlignment="Center" Margin="10,12,29,15"/>
+
+        <Button Content="Save" 
+              Background="#4CAF50" 
+              Grid.Row="5"
+              Grid.Column="1"
+              Height="auto"
+              FontSize="25"
+              FontWeight="Bold"
+              Foreground="Black" Margin="199,16,81,15"
+              Click="BookSave_button"/>
+        <Button Content="Cancel" 
+          Background="#4CAF50" 
+          Grid.Row="5"
+              
+          Height="auto"
+          FontSize="25"
+          FontWeight="Bold"
+          Foreground="Black"
+          Grid.Column="0" Margin="62,16,55,15" 
+          Click="BookCancel_Button"/>
+
+
+
+
+
+    </Grid>
+</Window>

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./Reservation.css";
 import { getBooks, getReservedBooks, reserveBook, unreserveBook } from "../api";
 import searchIcon from "../assets/search.png";
+import Title from "../Components/Title/Title";
 
 const Reservation = () => {
   const [books, setBooks] = useState([]);
@@ -14,8 +15,8 @@ const Reservation = () => {
 
   const fetchData = async () => {
     try {
-      const booksData = await getBooks(); // Fetch available books
-      const reservedData = await getReservedBooks(); // Fetch reserved books
+      const booksData = await getBooks();
+      const reservedData = await getReservedBooks();
       setBooks(booksData);
       setReservedBooks(reservedData);
     } catch (error) {
@@ -26,7 +27,7 @@ const Reservation = () => {
   const handleReserve = async (bookId) => {
     try {
       await reserveBook(bookId);
-      fetchData(); // Refresh lists after reserving
+      fetchData();
     } catch (error) {
       console.error("Error reserving book:", error);
     }
@@ -35,7 +36,7 @@ const Reservation = () => {
   const handleUnreserve = async (bookId) => {
     try {
       await unreserveBook(bookId);
-      fetchData(); // Refresh lists after unreserving
+      fetchData();
     } catch (error) {
       console.error("Error unreserving book:", error);
     }
@@ -60,7 +61,7 @@ const Reservation = () => {
         </div>
       </div>
       <div className="container">
-        <h2>Book List</h2>
+        <Title subTitle="Book Collection" Title="AVAILABLE BOOKS" />
         <div className="cards-container">
           {filteredBooks.length > 0 ? (
             filteredBooks.map((book) => (
@@ -75,14 +76,16 @@ const Reservation = () => {
           )}
         </div>
 
-        <h2>Reserved Books</h2>
+        <Title subTitle="Book Collection" Title="RESERVED BOOKS" />
         <div className="cards-container">
           {reservedBooks.length > 0 ? (
             reservedBooks.map((book) => (
               <div className="book-card" key={book.id}>
                 <h3>{book.name}</h3>
                 <p>by {book.author}</p>
-                <button onClick={() => handleUnreserve(book.id)}>Unreserve</button>
+                <button onClick={() => handleUnreserve(book.id)}>
+                  Unreserve
+                </button>
               </div>
             ))
           ) : (

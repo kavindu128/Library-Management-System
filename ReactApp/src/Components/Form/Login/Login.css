@@ -122,3 +122,9 @@ text-align: center;
 .register-link p a:hover{
   text-decoration: underline;
 }
+
+.error-message {
+  color: #ff4444;
+  margin-bottom: 15px;
+  text-align: center;
+}

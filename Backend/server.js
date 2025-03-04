@@ -1,20 +1,23 @@
 const express = require("express");
 const { PrismaClient } = require("@prisma/client");
 const cors = require("cors");
+const bcrypt = require("bcrypt");
+const jwt = require("jsonwebtoken");
 
 const app = express();
 const prisma = new PrismaClient();
 
 app.use(cors());
 app.use(express.json());
+const JWT_SECRET = "your_jwt_secret_key"; // Replace with a strong secret key
 
 // 📌 Get all books
 app.get("/books", async (req, res) => {
   try {
-    const books = await prisma.book.findMany();
+    const books = await prisma.book.findMany(); // Fetch all books
     res.json(books);
   } catch (error) {
-    res.status(500).json({ error: "Failed to fetch books" });
+    res.status(500).json({ message: "Error fetching books" });
   }
 });
 
@@ -111,6 +114,91 @@ app.post("/books/:id/unreserve", async (req, res) => {
     res.status(500).json({ error: "Failed to unreserve book" });
   }
 });
+
+
+// 📌 User Login
+app.post("/login", async (req, res) => {
+  const { email, password } = req.body;
+
+  try {
+    const user = await prisma.user.findUnique({
+      where: { email },
+    });
+
+    if (!user) return res.status(404).json({ error: "User not found" });
+
+    // Simple password comparison (remove bcrypt if you don't want hashing)
+    if (password !== user.password) {
+      return res.status(401).json({ error: "Invalid password" });
+    }
+
+    // Return username for display
+    res.json({ 
+      message: "Login successful",
+      username: user.username
+    });
+
+  } catch (error) {
+    console.error("Login error:", error);
+    res.status(500).json({ error: "Login failed" });
+  }
+});
+
+// 📌 Protected Route Example
+app.get("/protected", authenticateToken, (req, res) => {
+  res.json({ message: "This is a protected route", user: req.user });
+});
+
+// Middleware to authenticate JWT token
+function authenticateToken(req, res, next) {
+  const authHeader = req.headers["authorization"];
+  const token = authHeader && authHeader.split(" ")[1];
+
+  if (!token) {
+    return res.status(401).json({ error: "Access denied. No token provided." });
+  }
+
+  jwt.verify(token, JWT_SECRET, (err, user) => {
+    if (err) {
+      return res.status(403).json({ error: "Invalid or expired token" });
+    }
+    req.user = user;
+    next();
+  });
+}
+
+// Update register endpoint:
+app.post("/register", async (req, res) => {
+  const { username, email, password } = req.body;
+
+  try {
+    const existingUser = await prisma.user.findUnique({
+      where: { email },
+    });
+
+    if (existingUser) {
+      return res.status(400).json({ error: "User already exists" });
+    }
+
+    // Remove password hashing
+    const newUser = await prisma.user.create({
+      data: {
+        username,
+        email,
+        password: password, // Store plain text password
+      },
+    });
+
+    res.status(201).json({ 
+      message: "User registered successfully", 
+      user: newUser 
+    });
+  } catch (error) {
+    console.error("Registration error:", error);
+    res.status(500).json({ error: "Failed to register user" });
+  }
+});
+
 
 // Start the server
 const PORT = 5000;

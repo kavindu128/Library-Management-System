@@ -18,3 +18,10 @@ model ReservedBook {
   name   String
   author String
 }
+
+model User {
+  id       Int    @id @default(autoincrement())
+  username String
+  email    String @unique
+  password String
+}

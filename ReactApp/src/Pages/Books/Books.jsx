@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from 'react';  // ✅ Import useEffect
-import './Books.css';
-import searchIcon from '../../assets/search.png';
-import Title from '../../Components/Title/Title';
-import Footer from '../../Components/Footer/Footer';
-import { getBooks, addBook, deleteBook, updateBook } from "../../api"; // Ensure API exists
+import React, { useState, useEffect } from "react";
+import "./Books.css";
+import { getBooks, addBook, deleteBook, updateBook } from "../../api";
+import searchIcon from "../../assets/search.png";
+import Title from "../../Components/Title/Title";
+import Footer from "../../Components/Footer/Footer";
 
 const Books = () => {
   const [books, setBooks] = useState([]);
@@ -27,7 +27,7 @@ const Books = () => {
   const handleAddBook = async () => {
     if (!newBook.name || !newBook.author) return;
     try {
-      await addBook(newBook);
+      await addBook(newBook.name, newBook.author);
       setNewBook({ name: "", author: "" });
       fetchBooks();
     } catch (error) {
@@ -51,7 +51,7 @@ const Books = () => {
   const handleSaveEdit = async () => {
     if (!editBook.name || !editBook.author) return;
     try {
-      await updateBook(editBook.id, editBook);
+      await updateBook(editBook.id, editBook.name, editBook.author);
       setEditBook(null);
       fetchBooks();
     } catch (error) {
@@ -67,55 +67,52 @@ const Books = () => {
 
   return (
     <>
-      <div className='books'>
+      <div className="books">
         <div className="search-container">
-          <input 
-            type="text" 
-            placeholder="Search books..." 
+          <input
+            type="text"
+            placeholder="Search books..."
             className="search-input"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
           />
           <img src={searchIcon} alt="Search" className="search-icon" />
         </div>
-
       </div>
 
-      
-      <Title subTitle='Book Collection' Title='ADD BOOKS'/>
+      <Title subTitle="Book Collection" Title="ADD BOOKS" />
 
       <div className="book-form">
-          <input
-            type="text"
-            placeholder="Book Name"
-            value={editBook ? editBook.name : newBook.name}
-            onChange={(e) =>
-              editBook
-                ? setEditBook({ ...editBook, name: e.target.value })
-                : setNewBook({ ...newBook, name: e.target.value })
-            }
-          />
-          <input
-            type="text"
-            placeholder="Author"
-            value={editBook ? editBook.author : newBook.author}
-            onChange={(e) =>
-              editBook
-                ? setEditBook({ ...editBook, author: e.target.value })
-                : setNewBook({ ...newBook, author: e.target.value })
-            }
-          />
-          {editBook ? (
-            <button onClick={handleSaveEdit} className="edit-button">
-              Save
-            </button>
-          ) : (
-            <button onClick={handleAddBook} className="add-button">
-              Add Book
-            </button>
-          )}
-        </div>
-
+        <input
+          type="text"
+          placeholder="Book Name"
+          value={editBook ? editBook.name : newBook.name}
+          onChange={(e) =>
+            editBook
+              ? setEditBook({ ...editBook, name: e.target.value })
+              : setNewBook({ ...newBook, name: e.target.value })
+          }
+        />
+        <input
+          type="text"
+          placeholder="Author"
+          value={editBook ? editBook.author : newBook.author}
+          onChange={(e) =>
+            editBook
+              ? setEditBook({ ...editBook, author: e.target.value })
+              : setNewBook({ ...newBook, author: e.target.value })
+          }
+        />
+        {editBook ? (
+          <button onClick={handleSaveEdit} className="edit-button">
+            Save
+          </button>
+        ) : (
+          <button onClick={handleAddBook} className="add-button">
+            Add Book
+          </button>
+        )}
+      </div>
 
       <div className="book-list">
         <Title subTitle="Book List" Title="Your Collection" />
@@ -123,12 +120,20 @@ const Books = () => {
           {filteredBooks.length > 0 ? (
             filteredBooks.map((book) => (
               <li key={book.id} className="book-item">
-                <span>{book.name} by {book.author}</span>
+                <span>
+                  {book.name} by {book.author}
+                </span>
                 <div className="buttons">
-                  <button onClick={() => handleEdit(book)} className="edit-button">
+                  <button
+                    onClick={() => handleEdit(book)}
+                    className="edit-button"
+                  >
                     Edit
                   </button>
-                  <button onClick={() => handleDelete(book.id)} className="delete-button">
+                  <button
+                    onClick={() => handleDelete(book.id)}
+                    className="delete-button"
+                  >
                     Delete
                   </button>
                 </div>

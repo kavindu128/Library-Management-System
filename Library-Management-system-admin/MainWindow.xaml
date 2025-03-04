@@ -1,0 +1,52 @@
+﻿<Window x:Class="Library_Management_system_admin.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Library_Management_system_admin"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+
+
+    <Grid >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="154*"/>
+            <RowDefinition Height="193*"/>
+            <RowDefinition Height="87*"/>
+        </Grid.RowDefinitions>
+
+
+        <Rectangle Fill="#800080" Opacity="1.0" Grid.RowSpan="3"/>
+        <Image Grid.Row="0" Source="Images/Library_logo.png" Height="110" HorizontalAlignment="Center" VerticalAlignment="Center"  Width="324"/>
+        <TextBlock  
+                   FontSize="40" 
+                   FontWeight="Bold" 
+                   HorizontalAlignment="Center" 
+                   Foreground="White" Width="584" 
+                   VerticalAlignment="Top" 
+                   RenderTransformOrigin="0.5,0.5" 
+                   Height="173"
+                   TextAlignment="Center" Margin="0,154,0,0" Grid.RowSpan="2">
+                    <Run Text="Welcome to the" /><LineBreak />
+                    <Run Text="Library Management" /><LineBreak />
+                    <Run Text="System" />
+
+
+        </TextBlock>
+
+        <Button
+         Content="Login" 
+         Width="140" 
+         Height="50" 
+         FontSize="20" 
+         FontWeight="Bold" 
+         HorizontalAlignment="Center" 
+         VerticalAlignment="Center"
+         Background="#4CAF50" 
+         Foreground="White" 
+         BorderBrush="Transparent" Grid.Row="2"
+         Click="Button_Click"/>
+
+
+    </Grid>
+</Window>
