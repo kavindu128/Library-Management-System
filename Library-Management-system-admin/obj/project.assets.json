@@ -3236,11 +3236,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\GUI Project\\Library-Management-System-admin\\Library-Management-system-admin.csproj",
+      "projectUniqueName": "D:\\GUI Project\\Library-Management-System\\Library-Management-system-admin\\Library-Management-system-admin.csproj",
       "projectName": "Library-Management-system-admin",
-      "projectPath": "D:\\GUI Project\\Library-Management-System-admin\\Library-Management-system-admin.csproj",
+      "projectPath": "D:\\GUI Project\\Library-Management-System\\Library-Management-system-admin\\Library-Management-system-admin.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "D:\\GUI Project\\Library-Management-System-admin\\obj\\",
+      "outputPath": "D:\\GUI Project\\Library-Management-System\\Library-Management-system-admin\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

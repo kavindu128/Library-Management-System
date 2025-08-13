@@ -1,65 +1,65 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\GUI Project\\Library-Management-system-admin\\",
+  "WorkspaceRootPath": "D:\\GUI Project\\Library-Management-System\\Library-Management-system-admin\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1B9B4187-D73E-41AC-9185-B02A9AADC244}|Library-Management-system-admin.csproj|d:\\gui project\\library-management-system-admin\\bookswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{1B9B4187-D73E-41AC-9185-B02A9AADC244}|Library-Management-system-admin.csproj|d:\\gui project\\library-management-system\\library-management-system-admin\\bookswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{1B9B4187-D73E-41AC-9185-B02A9AADC244}|Library-Management-system-admin.csproj|solutionrelative:bookswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B9B4187-D73E-41AC-9185-B02A9AADC244}|Library-Management-system-admin.csproj|d:\\gui project\\library-management-system-admin\\addbookwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{1B9B4187-D73E-41AC-9185-B02A9AADC244}|Library-Management-system-admin.csproj|d:\\gui project\\library-management-system\\library-management-system-admin\\addbookwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{1B9B4187-D73E-41AC-9185-B02A9AADC244}|Library-Management-system-admin.csproj|solutionrelative:addbookwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B9B4187-D73E-41AC-9185-B02A9AADC244}|Library-Management-system-admin.csproj|d:\\gui project\\library-management-system-admin\\addbookwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1B9B4187-D73E-41AC-9185-B02A9AADC244}|Library-Management-system-admin.csproj|d:\\gui project\\library-management-system\\library-management-system-admin\\addbookwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1B9B4187-D73E-41AC-9185-B02A9AADC244}|Library-Management-system-admin.csproj|solutionrelative:addbookwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B9B4187-D73E-41AC-9185-B02A9AADC244}|Library-Management-system-admin.csproj|d:\\gui project\\library-management-system-admin\\dashboad.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1B9B4187-D73E-41AC-9185-B02A9AADC244}|Library-Management-system-admin.csproj|d:\\gui project\\library-management-system\\library-management-system-admin\\dashboad.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1B9B4187-D73E-41AC-9185-B02A9AADC244}|Library-Management-system-admin.csproj|solutionrelative:dashboad.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B9B4187-D73E-41AC-9185-B02A9AADC244}|Library-Management-system-admin.csproj|d:\\gui project\\library-management-system-admin\\dashboad.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{1B9B4187-D73E-41AC-9185-B02A9AADC244}|Library-Management-system-admin.csproj|d:\\gui project\\library-management-system\\library-management-system-admin\\dashboad.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{1B9B4187-D73E-41AC-9185-B02A9AADC244}|Library-Management-system-admin.csproj|solutionrelative:dashboad.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B9B4187-D73E-41AC-9185-B02A9AADC244}|Library-Management-system-admin.csproj|d:\\gui project\\library-management-system-admin\\bookswindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1B9B4187-D73E-41AC-9185-B02A9AADC244}|Library-Management-system-admin.csproj|d:\\gui project\\library-management-system\\library-management-system-admin\\bookswindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1B9B4187-D73E-41AC-9185-B02A9AADC244}|Library-Management-system-admin.csproj|solutionrelative:bookswindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B9B4187-D73E-41AC-9185-B02A9AADC244}|Library-Management-system-admin.csproj|d:\\gui project\\library-management-system-admin\\migrations\\20250119091858_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1B9B4187-D73E-41AC-9185-B02A9AADC244}|Library-Management-system-admin.csproj|d:\\gui project\\library-management-system\\library-management-system-admin\\migrations\\20250119091858_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1B9B4187-D73E-41AC-9185-B02A9AADC244}|Library-Management-system-admin.csproj|solutionrelative:migrations\\20250119091858_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B9B4187-D73E-41AC-9185-B02A9AADC244}|Library-Management-system-admin.csproj|d:\\gui project\\library-management-system-admin\\members.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1B9B4187-D73E-41AC-9185-B02A9AADC244}|Library-Management-system-admin.csproj|d:\\gui project\\library-management-system\\library-management-system-admin\\members.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1B9B4187-D73E-41AC-9185-B02A9AADC244}|Library-Management-system-admin.csproj|solutionrelative:members.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B9B4187-D73E-41AC-9185-B02A9AADC244}|Library-Management-system-admin.csproj|d:\\gui project\\library-management-system-admin\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1B9B4187-D73E-41AC-9185-B02A9AADC244}|Library-Management-system-admin.csproj|d:\\gui project\\library-management-system\\library-management-system-admin\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1B9B4187-D73E-41AC-9185-B02A9AADC244}|Library-Management-system-admin.csproj|solutionrelative:assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B9B4187-D73E-41AC-9185-B02A9AADC244}|Library-Management-system-admin.csproj|d:\\gui project\\library-management-system-admin\\migrations\\bookdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1B9B4187-D73E-41AC-9185-B02A9AADC244}|Library-Management-system-admin.csproj|d:\\gui project\\library-management-system\\library-management-system-admin\\migrations\\bookdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1B9B4187-D73E-41AC-9185-B02A9AADC244}|Library-Management-system-admin.csproj|solutionrelative:migrations\\bookdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B9B4187-D73E-41AC-9185-B02A9AADC244}|Library-Management-system-admin.csproj|d:\\gui project\\library-management-system-admin\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1B9B4187-D73E-41AC-9185-B02A9AADC244}|Library-Management-system-admin.csproj|d:\\gui project\\library-management-system\\library-management-system-admin\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1B9B4187-D73E-41AC-9185-B02A9AADC244}|Library-Management-system-admin.csproj|solutionrelative:book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B9B4187-D73E-41AC-9185-B02A9AADC244}|Library-Management-system-admin.csproj|d:\\gui project\\library-management-system-admin\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{1B9B4187-D73E-41AC-9185-B02A9AADC244}|Library-Management-system-admin.csproj|d:\\gui project\\library-management-system\\library-management-system-admin\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{1B9B4187-D73E-41AC-9185-B02A9AADC244}|Library-Management-system-admin.csproj|solutionrelative:app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B9B4187-D73E-41AC-9185-B02A9AADC244}|Library-Management-system-admin.csproj|d:\\gui project\\library-management-system-admin\\memberswindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1B9B4187-D73E-41AC-9185-B02A9AADC244}|Library-Management-system-admin.csproj|d:\\gui project\\library-management-system\\library-management-system-admin\\memberswindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1B9B4187-D73E-41AC-9185-B02A9AADC244}|Library-Management-system-admin.csproj|solutionrelative:memberswindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B9B4187-D73E-41AC-9185-B02A9AADC244}|Library-Management-system-admin.csproj|d:\\gui project\\library-management-system-admin\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{1B9B4187-D73E-41AC-9185-B02A9AADC244}|Library-Management-system-admin.csproj|d:\\gui project\\library-management-system\\library-management-system-admin\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{1B9B4187-D73E-41AC-9185-B02A9AADC244}|Library-Management-system-admin.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B9B4187-D73E-41AC-9185-B02A9AADC244}|Library-Management-system-admin.csproj|d:\\gui project\\library-management-system-admin\\memberswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{1B9B4187-D73E-41AC-9185-B02A9AADC244}|Library-Management-system-admin.csproj|d:\\gui project\\library-management-system\\library-management-system-admin\\memberswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{1B9B4187-D73E-41AC-9185-B02A9AADC244}|Library-Management-system-admin.csproj|solutionrelative:memberswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
@@ -80,34 +80,32 @@
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "Dashboad.xaml.cs",
-              "DocumentMoniker": "D:\\GUI Project\\Library-Management-system-admin\\Dashboad.xaml.cs",
+              "DocumentMoniker": "D:\\GUI Project\\Library-Management-System\\Library-Management-system-admin\\Dashboad.xaml.cs",
               "RelativeDocumentMoniker": "Dashboad.xaml.cs",
-              "ToolTip": "D:\\GUI Project\\Library-Management-system-admin\\Dashboad.xaml.cs",
+              "ToolTip": "D:\\GUI Project\\Library-Management-System\\Library-Management-system-admin\\Dashboad.xaml.cs",
               "RelativeToolTip": "Dashboad.xaml.cs",
               "ViewState": "AgIAABIAAAAAAAAAAAAAACQAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-02T11:19:42.08Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-02T11:19:42.08Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "AddBookWindow.xaml",
-              "DocumentMoniker": "D:\\GUI Project\\Library-Management-system-admin\\AddBookWindow.xaml",
+              "DocumentMoniker": "D:\\GUI Project\\Library-Management-System\\Library-Management-system-admin\\AddBookWindow.xaml",
               "RelativeDocumentMoniker": "AddBookWindow.xaml",
-              "ToolTip": "D:\\GUI Project\\Library-Management-system-admin\\AddBookWindow.xaml",
+              "ToolTip": "D:\\GUI Project\\Library-Management-System\\Library-Management-system-admin\\AddBookWindow.xaml",
               "RelativeToolTip": "AddBookWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-03-02T11:48:46.6Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-02T11:48:46.6Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "BooksWindow.xaml",
-              "DocumentMoniker": "D:\\GUI Project\\Library-Management-system-admin\\BooksWindow.xaml",
+              "DocumentMoniker": "D:\\GUI Project\\Library-Management-System\\Library-Management-system-admin\\BooksWindow.xaml",
               "RelativeDocumentMoniker": "BooksWindow.xaml",
-              "ToolTip": "D:\\GUI Project\\Library-Management-system-admin\\BooksWindow.xaml",
+              "ToolTip": "D:\\GUI Project\\Library-Management-System\\Library-Management-system-admin\\BooksWindow.xaml",
               "RelativeToolTip": "BooksWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-02-22T03:59:23.885Z",
@@ -117,112 +115,104 @@
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "Dashboad.xaml",
-              "DocumentMoniker": "D:\\GUI Project\\Library-Management-system-admin\\Dashboad.xaml",
+              "DocumentMoniker": "D:\\GUI Project\\Library-Management-System\\Library-Management-system-admin\\Dashboad.xaml",
               "RelativeDocumentMoniker": "Dashboad.xaml",
-              "ToolTip": "D:\\GUI Project\\Library-Management-system-admin\\Dashboad.xaml",
+              "ToolTip": "D:\\GUI Project\\Library-Management-System\\Library-Management-system-admin\\Dashboad.xaml",
               "RelativeToolTip": "Dashboad.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-02-22T04:59:37.526Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-22T04:59:37.526Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "AddBookWindow.xaml.cs",
-              "DocumentMoniker": "D:\\GUI Project\\Library-Management-system-admin\\AddBookWindow.xaml.cs",
+              "DocumentMoniker": "D:\\GUI Project\\Library-Management-System\\Library-Management-system-admin\\AddBookWindow.xaml.cs",
               "RelativeDocumentMoniker": "AddBookWindow.xaml.cs",
-              "ToolTip": "D:\\GUI Project\\Library-Management-system-admin\\AddBookWindow.xaml.cs",
+              "ToolTip": "D:\\GUI Project\\Library-Management-System\\Library-Management-system-admin\\AddBookWindow.xaml.cs",
               "RelativeToolTip": "AddBookWindow.xaml.cs",
               "ViewState": "AgIAACcAAAAAAAAAAAAmwDoAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-02T12:33:36.051Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-02T12:33:36.051Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
               "Title": "BooksWindow.xaml.cs",
-              "DocumentMoniker": "D:\\GUI Project\\Library-Management-system-admin\\BooksWindow.xaml.cs",
+              "DocumentMoniker": "D:\\GUI Project\\Library-Management-System\\Library-Management-system-admin\\BooksWindow.xaml.cs",
               "RelativeDocumentMoniker": "BooksWindow.xaml.cs",
-              "ToolTip": "D:\\GUI Project\\Library-Management-system-admin\\BooksWindow.xaml.cs",
+              "ToolTip": "D:\\GUI Project\\Library-Management-System\\Library-Management-system-admin\\BooksWindow.xaml.cs",
               "RelativeToolTip": "BooksWindow.xaml.cs",
               "ViewState": "AgIAABcAAAAAAAAAAAAowC8AAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-22T03:59:12.073Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-22T03:59:12.073Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
               "Title": "BookDbContextModelSnapshot.cs",
-              "DocumentMoniker": "D:\\GUI Project\\Library-Management-system-admin\\Migrations\\BookDbContextModelSnapshot.cs",
+              "DocumentMoniker": "D:\\GUI Project\\Library-Management-System\\Library-Management-system-admin\\Migrations\\BookDbContextModelSnapshot.cs",
               "RelativeDocumentMoniker": "Migrations\\BookDbContextModelSnapshot.cs",
-              "ToolTip": "D:\\GUI Project\\Library-Management-system-admin\\Migrations\\BookDbContextModelSnapshot.cs",
+              "ToolTip": "D:\\GUI Project\\Library-Management-System\\Library-Management-system-admin\\Migrations\\BookDbContextModelSnapshot.cs",
               "RelativeToolTip": "Migrations\\BookDbContextModelSnapshot.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-02T15:43:43.688Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-02T15:43:43.688Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
               "Title": "20250119091858_InitialCreate.cs",
-              "DocumentMoniker": "D:\\GUI Project\\Library-Management-system-admin\\Migrations\\20250119091858_InitialCreate.cs",
+              "DocumentMoniker": "D:\\GUI Project\\Library-Management-System\\Library-Management-system-admin\\Migrations\\20250119091858_InitialCreate.cs",
               "RelativeDocumentMoniker": "Migrations\\20250119091858_InitialCreate.cs",
-              "ToolTip": "D:\\GUI Project\\Library-Management-system-admin\\Migrations\\20250119091858_InitialCreate.cs",
+              "ToolTip": "D:\\GUI Project\\Library-Management-System\\Library-Management-system-admin\\Migrations\\20250119091858_InitialCreate.cs",
               "RelativeToolTip": "Migrations\\20250119091858_InitialCreate.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAACEAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-22T04:08:24.504Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-22T04:08:24.504Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
               "Title": "AssemblyInfo.cs",
-              "DocumentMoniker": "D:\\GUI Project\\Library-Management-system-admin\\AssemblyInfo.cs",
+              "DocumentMoniker": "D:\\GUI Project\\Library-Management-System\\Library-Management-system-admin\\AssemblyInfo.cs",
               "RelativeDocumentMoniker": "AssemblyInfo.cs",
-              "ToolTip": "D:\\GUI Project\\Library-Management-system-admin\\AssemblyInfo.cs",
+              "ToolTip": "D:\\GUI Project\\Library-Management-System\\Library-Management-system-admin\\AssemblyInfo.cs",
               "RelativeToolTip": "AssemblyInfo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-02T15:47:59.226Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-02T15:47:59.226Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
               "Title": "Members.cs",
-              "DocumentMoniker": "D:\\GUI Project\\Library-Management-system-admin\\Members.cs",
+              "DocumentMoniker": "D:\\GUI Project\\Library-Management-System\\Library-Management-system-admin\\Members.cs",
               "RelativeDocumentMoniker": "Members.cs",
-              "ToolTip": "D:\\GUI Project\\Library-Management-system-admin\\Members.cs",
+              "ToolTip": "D:\\GUI Project\\Library-Management-System\\Library-Management-system-admin\\Members.cs",
               "RelativeToolTip": "Members.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-02T15:45:19.149Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-02T15:45:19.149Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
               "Title": "Book.cs",
-              "DocumentMoniker": "D:\\GUI Project\\Library-Management-system-admin\\Book.cs",
+              "DocumentMoniker": "D:\\GUI Project\\Library-Management-System\\Library-Management-system-admin\\Book.cs",
               "RelativeDocumentMoniker": "Book.cs",
-              "ToolTip": "D:\\GUI Project\\Library-Management-system-admin\\Book.cs",
+              "ToolTip": "D:\\GUI Project\\Library-Management-System\\Library-Management-system-admin\\Book.cs",
               "RelativeToolTip": "Book.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-22T03:59:21.303Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-22T03:59:21.303Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
               "Title": "App.xaml",
-              "DocumentMoniker": "D:\\GUI Project\\Library-Management-system-admin\\App.xaml",
+              "DocumentMoniker": "D:\\GUI Project\\Library-Management-System\\Library-Management-system-admin\\App.xaml",
               "RelativeDocumentMoniker": "App.xaml",
-              "ToolTip": "D:\\GUI Project\\Library-Management-system-admin\\App.xaml",
+              "ToolTip": "D:\\GUI Project\\Library-Management-System\\Library-Management-system-admin\\App.xaml",
               "RelativeToolTip": "App.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-03-02T10:25:47.547Z",
@@ -232,38 +222,35 @@
               "$type": "Document",
               "DocumentIndex": 12,
               "Title": "MembersWindow.xaml.cs",
-              "DocumentMoniker": "D:\\GUI Project\\Library-Management-system-admin\\MembersWindow.xaml.cs",
+              "DocumentMoniker": "D:\\GUI Project\\Library-Management-System\\Library-Management-system-admin\\MembersWindow.xaml.cs",
               "RelativeDocumentMoniker": "MembersWindow.xaml.cs",
-              "ToolTip": "D:\\GUI Project\\Library-Management-system-admin\\MembersWindow.xaml.cs",
+              "ToolTip": "D:\\GUI Project\\Library-Management-System\\Library-Management-system-admin\\MembersWindow.xaml.cs",
               "RelativeToolTip": "MembersWindow.xaml.cs",
               "ViewState": "AgIAAA8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-22T04:01:01.768Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-22T04:01:01.768Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 13,
               "Title": "MainWindow.xaml",
-              "DocumentMoniker": "D:\\GUI Project\\Library-Management-system-admin\\MainWindow.xaml",
+              "DocumentMoniker": "D:\\GUI Project\\Library-Management-System\\Library-Management-system-admin\\MainWindow.xaml",
               "RelativeDocumentMoniker": "MainWindow.xaml",
-              "ToolTip": "D:\\GUI Project\\Library-Management-system-admin\\MainWindow.xaml",
+              "ToolTip": "D:\\GUI Project\\Library-Management-System\\Library-Management-system-admin\\MainWindow.xaml",
               "RelativeToolTip": "MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-02-22T04:59:30.796Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-22T04:59:30.796Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 14,
               "Title": "MembersWindow.xaml",
-              "DocumentMoniker": "D:\\GUI Project\\Library-Management-system-admin\\MembersWindow.xaml",
+              "DocumentMoniker": "D:\\GUI Project\\Library-Management-System\\Library-Management-system-admin\\MembersWindow.xaml",
               "RelativeDocumentMoniker": "MembersWindow.xaml",
-              "ToolTip": "D:\\GUI Project\\Library-Management-system-admin\\MembersWindow.xaml",
+              "ToolTip": "D:\\GUI Project\\Library-Management-System\\Library-Management-system-admin\\MembersWindow.xaml",
               "RelativeToolTip": "MembersWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-02-22T04:00:58.051Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-22T04:00:58.051Z"
             }
           ]
         }

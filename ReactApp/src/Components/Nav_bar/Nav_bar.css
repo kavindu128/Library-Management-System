@@ -2,7 +2,7 @@ nav{
   width: 100%;
   /* background: linear-gradient(to right,rgb(89, 9, 135),rgba(89, 63, 139, 1)); */
   color: #fff;
-  padding: 4px 0;
+  padding: 0 20px;
   position: fixed;
   top: 0;
   left: 0;
@@ -21,9 +21,20 @@ nav ul li{
   list-style: none;
   margin: 5px 25px;
   font-size: 16px;
+  margin: 0;
   
 }
 
+
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Replace individual margins with gap */
+  flex-grow: 1; /* Allow the ul to grow */
+  justify-content: flex-end; /* Push content to the right */
+  padding: 0;
+  gap: 20px ;
+}
 
 .loginbtn {
   background: transparent;
@@ -72,4 +83,8 @@ nav ul li{
 .logoutbtn:hover {
   background: #fff;
   color: #212121;
+}
+
+nav ul li:nth-last-child(2) {
+  margin-right: 40px; /* Adjust this value to increase/decrease the gap */
 }

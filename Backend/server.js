@@ -1,3 +1,4 @@
+require("dotenv").config();
 const express = require("express");
 const { PrismaClient } = require("@prisma/client");
 const cors = require("cors");
@@ -7,14 +8,20 @@ const jwt = require("jsonwebtoken");
 const app = express();
 const prisma = new PrismaClient();
 
-app.use(cors());
-app.use(express.json());
-const JWT_SECRET = "your_jwt_secret_key"; // Replace with a strong secret key
+const corsOptions = {
+  origin: 'http://localhost:3000',
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  allowedHeaders: ['Content-Type', 'Authorization']
+};
 
-// 📌 Get all books
+app.use(cors(corsOptions));
+app.use(express.json());
+const JWT_SECRET = process.env.JWT_SECRET;
+
+// 📌 Get all books (including reservation status)
 app.get("/books", async (req, res) => {
   try {
-    const books = await prisma.book.findMany(); // Fetch all books
+    const books = await prisma.book.findMany();
     res.json(books);
   } catch (error) {
     res.status(500).json({ message: "Error fetching books" });
@@ -25,7 +32,14 @@ app.get("/books", async (req, res) => {
 app.post("/books", async (req, res) => {
   try {
     const { name, author } = req.body;
-    const newBook = await prisma.book.create({ data: { name, author } });
+    const newBook = await prisma.book.create({ 
+      data: { 
+        name, 
+        author,
+        reserved: false,
+        userId: null
+      } 
+    });
     res.json(newBook);
   } catch (error) {
     res.status(500).json({ error: "Failed to add book" });
@@ -58,63 +72,57 @@ app.put("/books/:id", async (req, res) => {
   }
 });
 
-// 📌 Get all reserved books
-app.get("/books/reserved", async (req, res) => {
-  try {
-    const reservedBooks = await prisma.reservedBook.findMany();
-    res.json(reservedBooks);
-  } catch (error) {
-    res.status(500).json({ error: "Failed to fetch reserved books" });
-  }
-});
-
 // 📌 Reserve a book
-app.post("/books/:id/reserve", async (req, res) => {
+app.post("/books/:id/reserve", authenticateToken, async (req, res) => {
   try {
     const bookId = parseInt(req.params.id);
-    const book = await prisma.book.findUnique({ where: { id: bookId } });
-    if (!book) return res.status(404).json({ error: "Book not found" });
+    const userId = req.user.id;
 
-    const reservedBook = await prisma.reservedBook.create({
-      data: { name: book.name, author: book.author },
+    const updatedBook = await prisma.book.update({
+      where: { id: bookId },
+      data: { 
+        reserved: true,
+        userId: userId
+      },
     });
-
-    await prisma.book.delete({ where: { id: bookId } });
-
-    res.json(reservedBook);
+    
+    res.json(updatedBook);
   } catch (error) {
     res.status(500).json({ error: "Failed to reserve book" });
   }
 });
 
 // 📌 Unreserve a book
-app.post("/books/:id/unreserve", async (req, res) => {
+app.post("/books/:id/unreserve", authenticateToken, async (req, res) => {
   try {
     const bookId = parseInt(req.params.id);
+    const userId = req.user.id;
 
-    // Find the reserved book
-    const reservedBook = await prisma.reservedBook.findUnique({
+    const book = await prisma.book.findUnique({
       where: { id: bookId },
     });
 
-    if (!reservedBook) {
-      return res.status(404).json({ error: "Reserved book not found" });
+    if (!book) {
+      return res.status(404).json({ error: "Book not found" });
     }
 
-    // Add the book back to the main book collection
-    const book = await prisma.book.create({
-      data: { name: reservedBook.name, author: reservedBook.author },
+    if (book.userId !== userId) {
+      return res.status(403).json({ error: "You can only unreserve your own books" });
+    }
+
+    const updatedBook = await prisma.book.update({
+      where: { id: bookId },
+      data: { 
+        reserved: false,
+        userId: null
+      },
     });
-
-    // Remove it from reserved collection
-    await prisma.reservedBook.delete({ where: { id: bookId } });
-
-    res.json(book);
+    
+    res.json(updatedBook);
   } catch (error) {
     res.status(500).json({ error: "Failed to unreserve book" });
   }
 });
-
 
 // 📌 User Login
 app.post("/login", async (req, res) => {
@@ -127,15 +135,17 @@ app.post("/login", async (req, res) => {
 
     if (!user) return res.status(404).json({ error: "User not found" });
 
-    // Simple password comparison (remove bcrypt if you don't want hashing)
-    if (password !== user.password) {
+    const validPassword = await bcrypt.compare(password, user.password);
+    if (!validPassword) {
       return res.status(401).json({ error: "Invalid password" });
     }
 
-    // Return username for display
+    const token = jwt.sign({ id: user.id, email: user.email }, JWT_SECRET, { expiresIn: '1h' });
+    
     res.json({ 
       message: "Login successful",
-      username: user.username
+      username: user.username,
+      token
     });
 
   } catch (error) {
@@ -167,7 +177,7 @@ function authenticateToken(req, res, next) {
   });
 }
 
-// Update register endpoint:
+// Register endpoint
 app.post("/register", async (req, res) => {
   const { username, email, password } = req.body;
 
@@ -180,12 +190,14 @@ app.post("/register", async (req, res) => {
       return res.status(400).json({ error: "User already exists" });
     }
 
-    // Remove password hashing
+    const salt = await bcrypt.genSalt(10);
+    const hashedPassword = await bcrypt.hash(password, salt);
+
     const newUser = await prisma.user.create({
       data: {
         username,
         email,
-        password: password, // Store plain text password
+        password: hashedPassword,
       },
     });
 
@@ -199,9 +211,8 @@ app.post("/register", async (req, res) => {
   }
 });
 
-
 // Start the server
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
   console.log(`Server running on http://localhost:${PORT}`);
 });
